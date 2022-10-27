@@ -18,12 +18,11 @@ pnpm i -D unocss-preset-prime
 ## Initialize
 
 ```js
-# unocss.config.ts
+# uno.config.ts
 
 import { defineConfig } from 'unocss';
 import presetPrime from 'unocss-preset-prime';
 
-// https://uno.antfu.me/
 export default defineConfig({
   presets: [presetPrime()],
 });
