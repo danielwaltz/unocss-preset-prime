@@ -7,8 +7,10 @@ UnoCSS preset for supporting [Prime UI](https://www.primefaces.org/) theme color
 ```bash
 # npm
 npm i -D unocss-preset-prime
+
 # yarn
 yarn add -D unocss-preset-prime
+
 # pnpm
 pnpm i -D unocss-preset-prime
 ```
@@ -17,6 +19,7 @@ pnpm i -D unocss-preset-prime
 
 ```js
 # unocss.config.ts
+
 import { defineConfig } from 'unocss';
 import presetPrime from 'unocss-preset-prime';
 
