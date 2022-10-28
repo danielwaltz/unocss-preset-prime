@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v1.0.0...v1.1.0) (2022-10-28)
+
+
+### Features
+
+* add preflight with option to disable ([96b97f5](https://github.com/danielwaltz/unocss-preset-prime/commit/96b97f5261a54cfe795db154e51b07d28534dfc5))
+
 # 1.0.0 (2022-10-27)
 
 
