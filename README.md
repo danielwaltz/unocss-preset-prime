@@ -28,3 +28,12 @@ export default defineConfig({
 });
 
 ```
+
+## Options
+
+```js
+presetPrime({
+  /* Use a preflight to set theme colors and font-family on body. Defaults to true. */
+  preflight: true,
+});
+```

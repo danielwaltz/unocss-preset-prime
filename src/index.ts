@@ -2,7 +2,17 @@ import { Preset } from 'unocss';
 import { generateThemeColors } from '@/utils/generators';
 import { PrimeThemeColor } from '@/utils/constants';
 
-const presetPrime = (): Preset => {
+export interface Options {
+  /**
+   * Use a preflight to set theme colors and font-family on body.
+   * @defaultValue `true`
+   */
+  preflight?: boolean;
+}
+
+const presetPrime = (options?: Options): Preset => {
+  const { preflight = true } = options ?? {};
+
   const colors = generateThemeColors();
 
   return {
@@ -49,6 +59,20 @@ const presetPrime = (): Preset => {
         ([, p, v]) => `${p}-surface-${v}`,
       ],
     ],
+    preflights: preflight
+      ? [
+          {
+            getCSS: () => `
+              body {
+                margin: 0;
+                background-color: var(--surface-ground);
+                color: var(--text-color);
+                font-family: var(--font-family);
+              }
+            `,
+          },
+        ]
+      : undefined,
   };
 };
 
