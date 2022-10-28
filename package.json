@@ -1,7 +1,7 @@
 {
   "name": "unocss-preset-prime",
   "description": "UnoCSS preset for supporting Prime UI theme colors",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "author": "Daniel Waltz",
   "repository": {

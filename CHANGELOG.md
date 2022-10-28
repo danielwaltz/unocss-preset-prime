@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v1.1.0...v1.2.0) (2022-10-28)
+
+
+### Features
+
+* support using all base colors ([8ea92ce](https://github.com/danielwaltz/unocss-preset-prime/commit/8ea92cefb4934fa5db33805ad1e20bbab3946293))
+
 # [1.1.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v1.0.0...v1.1.0) (2022-10-28)
 
 
