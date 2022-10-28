@@ -1,8 +1,8 @@
 import {
   COLOR_RANGE,
-  ColorRange,
+  ColorRange as Range,
   THEME_COLORS,
-  PrimeThemeColor,
+  PrimeThemeColor as Color,
 } from '@/utils/constants';
 
 export const generateColorRange = <T extends string>(color: T) => {
@@ -11,16 +11,21 @@ export const generateColorRange = <T extends string>(color: T) => {
       ...result,
       [number]: `var(--${color}-${number})`,
     }),
-    {} as { [K in ColorRange]: `var(--${T}-${K})` },
+    {} as { [K in Range]: `var(--${T}-${K})` },
   );
+};
+
+export const generateColorRangeWithBase = <T extends string>(color: T) => {
+  const result = generateColorRange(color);
+  return { ...result, base: result[500] } as const;
 };
 
 export const generateThemeColors = () => {
   return THEME_COLORS.reduce(
     (result, color) => ({
       ...result,
-      [color]: { ...generateColorRange(color) },
+      [color]: { ...generateColorRangeWithBase(color) },
     }),
-    {} as { [K in PrimeThemeColor]: ReturnType<typeof generateColorRange<K>> },
+    {} as { [K in Color]: ReturnType<typeof generateColorRangeWithBase<K>> },
   );
 };

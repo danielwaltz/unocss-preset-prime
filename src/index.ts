@@ -1,6 +1,6 @@
 import { Preset } from 'unocss';
 import { generateThemeColors } from '@/utils/generators';
-import { PrimeThemeColor } from '@/utils/constants';
+import { PrimeThemeColor, PrimeSurfaceType } from '@/utils/constants';
 
 export interface Options {
   /**
@@ -53,7 +53,10 @@ const presetPrime = (options?: Options): Preset => {
         'text-base': 'text-text-base',
         'text-secondary': 'text-text-secondary',
       },
-      [/^([a-z]*?)-primary$/, ([c]) => `${c}-base`],
+      [
+        /^([a-z]*?)-(blue$|green$|yellow$|cyan$|pink$|indigo$|teal$|orange$|bluegray$|purple$|red$|gray$|primary$|surface$)/,
+        ([c]) => `${c}-base`,
+      ],
       [
         /^([a-z]*?)-(ground$|section$|card$|overlay$|border$|hover$)/,
         ([, p, v]) => `${p}-surface-${v}`,
@@ -76,6 +79,6 @@ const presetPrime = (options?: Options): Preset => {
   };
 };
 
-export type { PrimeThemeColor };
+export type { PrimeThemeColor, PrimeSurfaceType };
 
 export default presetPrime;
