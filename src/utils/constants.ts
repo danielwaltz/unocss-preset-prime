@@ -2,7 +2,7 @@ export const COLOR_RANGE = [
   50, 100, 200, 300, 400, 500, 600, 700, 800, 900,
 ] as const;
 
-export type ColorRange = typeof COLOR_RANGE[number];
+export type ColorRange = (typeof COLOR_RANGE)[number];
 
 export const THEME_COLORS = [
   'blue',
@@ -21,7 +21,7 @@ export const THEME_COLORS = [
   'surface',
 ] as const;
 
-export type PrimeThemeColor = typeof THEME_COLORS[number];
+export type PrimeThemeColor = (typeof THEME_COLORS)[number];
 
 export const SURFACE_TYPES = [
   'ground',
@@ -32,4 +32,4 @@ export const SURFACE_TYPES = [
   'hover',
 ] as const;
 
-export type PrimeSurfaceType = typeof SURFACE_TYPES[number];
+export type PrimeSurfaceType = (typeof SURFACE_TYPES)[number];
