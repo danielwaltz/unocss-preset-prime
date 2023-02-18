@@ -1,7 +1,7 @@
 {
   "name": "unocss-preset-prime",
-  "description": "UnoCSS preset for supporting Prime UI theme colors",
   "version": "1.2.0",
+  "description": "UnoCSS preset for supporting Prime UI theme colors",
   "license": "MIT",
   "author": "Daniel Waltz",
   "repository": {
@@ -41,6 +41,9 @@
     "release": "standard-version",
     "semantic-release": "semantic-release",
     "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "unocss": ">= 0.45.0 < 1"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
