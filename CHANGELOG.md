@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v1.2.0...v1.2.1) (2023-02-18)
+
+
+### Bug Fixes
+
+* make unocss a peer dependency ([9aad4b6](https://github.com/danielwaltz/unocss-preset-prime/commit/9aad4b6782ad251afb3657edf3254210a10e70c1))
+
 # [1.2.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v1.1.0...v1.2.0) (2022-10-28)
 
 
