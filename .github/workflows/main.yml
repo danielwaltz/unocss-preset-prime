@@ -1,7 +1,20 @@
 on: [push, pull_request]
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run type-check
+      - run: npm run build
   release:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - uses: actions/checkout@v3
         with:
@@ -9,8 +22,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
-          cache: 'npm'
+          node-version-file: .nvmrc
+          cache: npm
       - run: npm ci
       - run: npm run semantic-release
         env:
