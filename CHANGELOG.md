@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v2.0.0...v2.0.1) (2023-03-04)
+
+
+### Bug Fixes
+
+* make preset theme type less strict ([474dc90](https://github.com/danielwaltz/unocss-preset-prime/commit/474dc905ced04fb8716c5a29fac246c263ec1ce6))
+
 # [2.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v1.2.1...v2.0.0) (2023-03-04)
 
 
