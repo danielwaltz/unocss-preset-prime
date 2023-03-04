@@ -50,7 +50,7 @@ export const primeTheme = {
 
 export type PrimeTheme = typeof primeTheme;
 
-export const presetPrime = (options?: Options): Preset<PrimeTheme> => {
+export const presetPrime = (options?: Options): Preset<Theme> => {
   const { preflight = true } = options ?? {};
 
   return {
