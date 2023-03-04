@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v1.2.1...v2.0.0) (2023-03-04)
+
+
+### Features
+
+* deprecate default export ([29ce145](https://github.com/danielwaltz/unocss-preset-prime/commit/29ce145c9f6856995227ec3c94f009ae9d60f7e8))
+* export prime theme colors ([ad41354](https://github.com/danielwaltz/unocss-preset-prime/commit/ad41354191f5022f61c8cbfd329ac760fa41e0db))
+* improve and export theme types ([a79f586](https://github.com/danielwaltz/unocss-preset-prime/commit/a79f5865b2315cb9d9163706c259d80b2a8f59fd))
+
+
+### BREAKING CHANGES
+
+* default export has been removed
+
 ## [1.2.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v1.2.0...v1.2.1) (2023-02-18)
 
 
