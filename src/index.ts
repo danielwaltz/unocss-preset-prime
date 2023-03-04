@@ -1,6 +1,7 @@
-import { Preset } from 'unocss';
+import type { Preset } from 'unocss';
+import type { Theme } from '@unocss/preset-mini';
 import { generateThemeColors } from '@/utils/generators';
-import { PrimeThemeColor, PrimeSurfaceType } from '@/utils/constants';
+import type { PrimeThemeColor, PrimeSurfaceType } from '@/utils/constants';
 
 export interface Options {
   /**
@@ -39,16 +40,22 @@ export const primeThemeColors = {
     border: 'var(--surface-border)',
     hover: 'var(--surface-hover)',
   },
-};
+} as const;
 
-const presetPrime = (options?: Options): Preset => {
+export type PrimeThemeColors = typeof primeThemeColors;
+
+export const primeTheme = {
+  colors: primeThemeColors,
+} as const satisfies Theme;
+
+export type PrimeTheme = typeof primeTheme;
+
+const presetPrime = (options?: Options): Preset<PrimeTheme> => {
   const { preflight = true } = options ?? {};
 
   return {
     name: 'unocss-preset-prime',
-    theme: {
-      colors: primeThemeColors,
-    },
+    theme: primeTheme,
     shortcuts: [
       {
         'bg-primary': 'bg-primary-base text-primary-text',
