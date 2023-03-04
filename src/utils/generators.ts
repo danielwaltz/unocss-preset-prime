@@ -1,6 +1,6 @@
 import {
   COLOR_RANGE,
-  ColorRange as Range,
+  ColorRange,
   THEME_COLORS,
   PrimeThemeColor as Color,
 } from '@/utils/constants';
@@ -11,7 +11,7 @@ export const generateColorRange = <T extends string>(color: T) => {
       ...result,
       [number]: `var(--${color}-${number})`,
     }),
-    {} as { [K in Range]: `var(--${T}-${K})` },
+    {} as { [K in ColorRange]: `var(--${T}-${K})` },
   );
 };
 

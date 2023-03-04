@@ -10,42 +10,44 @@ export interface Options {
   preflight?: boolean;
 }
 
+const colors = generateThemeColors();
+
+export const primeThemeColors = {
+  ...colors,
+  primary: {
+    ...colors.primary,
+    base: 'var(--primary-color)',
+    text: 'var(--primary-color-text)',
+  },
+  text: {
+    base: 'var(--text-color)',
+    secondary: 'var(--text-color-secondary)',
+  },
+  surface: {
+    0: 'var(--surface-0)',
+    ...colors.surface,
+    a: 'var(--surface-a)',
+    b: 'var(--surface-b)',
+    c: 'var(--surface-c)',
+    d: 'var(--surface-d)',
+    e: 'var(--surface-e)',
+    f: 'var(--surface-f)',
+    ground: 'var(--surface-ground)',
+    section: 'var(--surface-section)',
+    card: 'var(--surface-card)',
+    overlay: 'var(--surface-overlay)',
+    border: 'var(--surface-border)',
+    hover: 'var(--surface-hover)',
+  },
+};
+
 const presetPrime = (options?: Options): Preset => {
   const { preflight = true } = options ?? {};
-
-  const colors = generateThemeColors();
 
   return {
     name: 'unocss-preset-prime',
     theme: {
-      colors: {
-        ...colors,
-        primary: {
-          ...colors.primary,
-          base: 'var(--primary-color)',
-          text: 'var(--primary-color-text)',
-        },
-        text: {
-          base: 'var(--text-color)',
-          secondary: 'var(--text-color-secondary)',
-        },
-        surface: {
-          0: 'var(--surface-0)',
-          ...colors.surface,
-          a: 'var(--surface-a)',
-          b: 'var(--surface-b)',
-          c: 'var(--surface-c)',
-          d: 'var(--surface-d)',
-          e: 'var(--surface-e)',
-          f: 'var(--surface-f)',
-          ground: 'var(--surface-ground)',
-          section: 'var(--surface-section)',
-          card: 'var(--surface-card)',
-          overlay: 'var(--surface-overlay)',
-          border: 'var(--surface-border)',
-          hover: 'var(--surface-hover)',
-        },
-      },
+      colors: primeThemeColors,
     },
     shortcuts: [
       {
