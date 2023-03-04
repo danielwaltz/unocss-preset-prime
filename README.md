@@ -21,7 +21,7 @@ pnpm i -D unocss-preset-prime
 # uno.config.ts
 
 import { defineConfig } from 'unocss';
-import presetPrime from 'unocss-preset-prime';
+import { presetPrime } from 'unocss-preset-prime';
 
 export default defineConfig({
   presets: [presetPrime()],
@@ -45,7 +45,7 @@ This preset exports helpful types and the generated theme colors directly for ex
 # uno.config.ts
 
 import { defineConfig } from 'unocss';
-import presetPrime, { primeThemeColors, PrimeTheme } from 'unocss-preset-prime';
+import { presetPrime, primeThemeColors, PrimeTheme } from 'unocss-preset-prime';
 
 export default defineConfig({
   presets: [presetPrime()],
