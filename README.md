@@ -49,17 +49,11 @@ import { presetPrime, primeThemeColors, PrimeTheme } from 'unocss-preset-prime';
 
 export default defineConfig({
   presets: [presetPrime()],
-  // Extend the theme colors directly using the exported 'primeThemeColors' object...
   theme: {
     colors: {
       success: primeThemeColors.green.base,
+      error: primeThemeColors.red.base,
     },
   },
-  // ...or use extendTheme with the exported 'PrimeTheme' type
-  extendTheme: (theme: PrimeTheme) => ({
-    colors: {
-      danger: theme.colors.red.base,
-    },
-  }),
 });
 ```
