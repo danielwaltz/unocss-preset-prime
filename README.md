@@ -32,8 +32,11 @@ export default defineConfig({
 
 ```ts
 presetPrime({
-  /* Use a preflight to set theme colors and font-family on body. Defaults to true. */
-  preflight: true,
+  /**
+   * Use a preflight to set theme colors and font-family on body.
+   * @defaultValue `true`
+   */
+  preflight?: boolean;
 });
 ```
 
@@ -51,8 +54,9 @@ export default defineConfig({
   presets: [presetUno(), presetPrime()],
   theme: {
     colors: {
-      success: primeThemeColors.green.base,
-      error: primeThemeColors.red.base,
+      success: primeThemeColors.green[500],
+      warning: primeThemeColors.yellow[500],
+      error: primeThemeColors.red[500],
     },
   },
 });
