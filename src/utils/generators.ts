@@ -5,7 +5,7 @@ import {
   PrimeThemeColor as Color,
 } from '@/utils/constants';
 
-export const generateColorRange = <T extends string>(color: T) => {
+export function generateColorRange<T extends string>(color: T) {
   return COLOR_RANGE.reduce(
     (result, number) => ({
       ...result,
@@ -13,14 +13,14 @@ export const generateColorRange = <T extends string>(color: T) => {
     }),
     {} as { [K in ColorRange]: `var(--${T}-${K})` },
   );
-};
+}
 
-export const generateColorRangeWithDefault = <T extends string>(color: T) => {
+export function generateColorRangeWithDefault<T extends string>(color: T) {
   const result = generateColorRange(color);
   return { ...result, DEFAULT: result[500] } as const;
-};
+}
 
-export const generateThemeColors = () => {
+export function generateThemeColors() {
   return THEME_COLORS.reduce(
     (result, color) => ({
       ...result,
@@ -28,4 +28,4 @@ export const generateThemeColors = () => {
     }),
     {} as { [K in Color]: ReturnType<typeof generateColorRangeWithDefault<K>> },
   );
-};
+}
