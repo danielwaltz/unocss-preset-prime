@@ -17,11 +17,11 @@ export const primeThemeColors = {
   ...colors,
   primary: {
     ...colors.primary,
-    base: 'var(--primary-color)',
+    DEFAULT: 'var(--primary-color)',
     text: 'var(--primary-color-text)',
   },
   text: {
-    base: 'var(--text-color)',
+    color: 'var(--text-color)',
     secondary: 'var(--text-color-secondary)',
   },
   surface: {
@@ -58,14 +58,11 @@ export const presetPrime = (options?: Options): Preset<Theme> => {
     theme: primeTheme,
     shortcuts: [
       {
-        'bg-primary': 'bg-primary-base text-primary-text',
-        'text-base': 'text-text-base',
-        'text-secondary': 'text-text-secondary',
+        'bg-primary': 'bg-primary text-primary-text',
+        'bg-primary-reverse': 'bg-primary-text text-primary',
+        'text-color': 'text-text-color',
+        'text-color-secondary': 'text-text-secondary',
       },
-      [
-        /^([a-z]*?)-(blue$|green$|yellow$|cyan$|pink$|indigo$|teal$|orange$|bluegray$|purple$|red$|gray$|primary$|surface$)/,
-        ([c]) => `${c}-base`,
-      ],
       [
         /^([a-z]*?)-(ground$|section$|card$|overlay$|border$|hover$)/,
         ([, p, v]) => `${p}-surface-${v}`,

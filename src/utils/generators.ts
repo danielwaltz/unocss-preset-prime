@@ -15,17 +15,17 @@ export const generateColorRange = <T extends string>(color: T) => {
   );
 };
 
-export const generateColorRangeWithBase = <T extends string>(color: T) => {
+export const generateColorRangeWithDefault = <T extends string>(color: T) => {
   const result = generateColorRange(color);
-  return { ...result, base: result[500] } as const;
+  return { ...result, DEFAULT: result[500] } as const;
 };
 
 export const generateThemeColors = () => {
   return THEME_COLORS.reduce(
     (result, color) => ({
       ...result,
-      [color]: { ...generateColorRangeWithBase(color) },
+      [color]: generateColorRangeWithDefault(color),
     }),
-    {} as { [K in Color]: ReturnType<typeof generateColorRangeWithBase<K>> },
+    {} as { [K in Color]: ReturnType<typeof generateColorRangeWithDefault<K>> },
   );
 };
