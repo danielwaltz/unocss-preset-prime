@@ -3,7 +3,7 @@ import type { Theme } from '@unocss/preset-mini';
 import { generateThemeColors } from '@/utils/generators';
 import type { PrimeThemeColor, PrimeSurfaceType } from '@/utils/constants';
 
-export interface Options {
+export interface PresetPrimeOptions {
   /**
    * Use a preflight to set theme colors and font-family on body.
    * @defaultValue `true`
@@ -50,7 +50,7 @@ export const primeTheme = {
 
 export type PrimeTheme = typeof primeTheme;
 
-export const presetPrime = (options?: Options): Preset<Theme> => {
+export const presetPrime = (options?: PresetPrimeOptions): Preset<Theme> => {
   const { preflight = true } = options ?? {};
 
   return {
