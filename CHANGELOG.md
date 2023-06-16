@@ -1,3 +1,21 @@
+# [3.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v2.0.1...v3.0.0) (2023-06-16)
+
+
+### Features
+
+* use theme color defaults and better align with primeflex ([621dafa](https://github.com/danielwaltz/unocss-preset-prime/commit/621dafa913ae2fce6dd41590b05903a6b98dbc23))
+
+
+### Styles
+
+* rename preset prime options interface ([448b025](https://github.com/danielwaltz/unocss-preset-prime/commit/448b025dbfba6b68fa11d75fef64ab85dfc08112))
+
+
+### BREAKING CHANGES
+
+* `Options` type is now `PresetPrimeOptions`.
+* `text-base` is now `text-color` and `text-secondary` is now `text-color-secondary`. All instances of `-base` are removed.
+
 ## [2.0.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v2.0.0...v2.0.1) (2023-03-04)
 
 
