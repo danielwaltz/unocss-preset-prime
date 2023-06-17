@@ -1,3 +1,5 @@
+## [3.0.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.0.0...v3.0.1) (2023-06-17)
+
 # [3.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v2.0.1...v3.0.0) (2023-06-16)
 
 
