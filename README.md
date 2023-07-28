@@ -15,6 +15,8 @@ yarn add -D unocss-preset-prime
 pnpm i -D unocss-preset-prime
 ```
 
+> :warning: Using PrimeIcons requires installing the `@iconify-json/prime` package.
+
 ## Initialize
 
 ```ts
@@ -37,7 +39,29 @@ presetPrime({
    * @defaultValue `true`
    */
   preflight?: boolean;
+  /**
+   * Use `presetIcons` for prime icons (ex `pi-bars`).
+   *
+   * Requires installing the `@iconify-json/prime` package.
+   * @defaultValue `false`
+   */
+  icons?: boolean;
 });
+```
+
+## Include Prime Components in Content Pipeline
+
+To support PrimeIcons and PrimeFlex classes on internal Prime components, you can include the following in your UnoCSS config depending on your bundler and framework. Below is an example for Vite + PrimeReact. Be sure to include the default regex as well!
+
+```ts
+content: {
+  pipeline: {
+    include: [
+      /(.*\/)primereact(.*)\.(c|m)?(js)(x?)$/, // PrimeReact
+      /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/, // Default
+    ],
+  },
+},
 ```
 
 ## Extending

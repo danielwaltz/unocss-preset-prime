@@ -67,7 +67,13 @@
     "prepack": "npm run build"
   },
   "peerDependencies": {
-    "unocss": ">= 0.45.0 < 1"
+    "unocss": ">= 0.45.0 < 1",
+    "@iconify-json/prime": "*"
+  },
+  "peerDependenciesMeta": {
+    "@iconify-json/prime": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",

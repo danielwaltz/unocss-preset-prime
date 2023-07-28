@@ -1,4 +1,4 @@
-import type { Preset } from 'unocss';
+import { Preset, presetIcons } from 'unocss';
 import type { Theme } from '@unocss/preset-mini';
 import { generateThemeColors } from '@/utils/generators';
 import type { PrimeThemeColor, PrimeSurfaceType } from '@/utils/constants';
@@ -9,6 +9,13 @@ export interface PresetPrimeOptions {
    * @defaultValue `true`
    */
   preflight?: boolean;
+  /**
+   * Use `presetIcons` for prime icons (ex `pi-bars`).
+   *
+   * Requires installing the `@iconify-json/prime` package.
+   * @defaultValue `false`
+   */
+  icons?: boolean;
 }
 
 const colors = generateThemeColors();
@@ -51,10 +58,11 @@ export const primeTheme = {
 export type PrimeTheme = typeof primeTheme;
 
 export function presetPrime(options?: PresetPrimeOptions): Preset<Theme> {
-  const { preflight = true } = options ?? {};
+  const { preflight = true, icons = false } = options ?? {};
 
-  return {
+  const preset = {
     name: 'unocss-preset-prime',
+    presets: [] as Preset[],
     theme: primeTheme,
     shortcuts: [
       {
@@ -82,7 +90,25 @@ export function presetPrime(options?: PresetPrimeOptions): Preset<Theme> {
           },
         ]
       : undefined,
-  };
+  } satisfies Preset;
+
+  if (icons) {
+    preset.presets.push(
+      presetIcons({
+        extraProperties: {
+          display: 'inline-block',
+          'vertical-align': 'middle',
+        },
+      }),
+    );
+
+    preset.shortcuts.push([
+      /^pi-(.*?)$/,
+      ([, d]) => `i-prime-${d} [scale:125%]`,
+    ]);
+  }
+
+  return preset;
 }
 
 export type { PrimeThemeColor, PrimeSurfaceType };
