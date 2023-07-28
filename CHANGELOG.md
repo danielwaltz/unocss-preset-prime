@@ -1,3 +1,10 @@
+## [3.1.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.0.1...v3.1.0) (2023-07-28)
+
+
+### Features
+
+* add optional support for using preset icons for primeicons ([673b1c1](https://github.com/danielwaltz/unocss-preset-prime/commit/673b1c1383f377e231b4975875da1aaf486b52ab))
+
 ## [3.0.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.0.0...v3.0.1) (2023-06-17)
 
 # [3.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v2.0.1...v3.0.0) (2023-06-16)
