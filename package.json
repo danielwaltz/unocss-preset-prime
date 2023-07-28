@@ -62,13 +62,14 @@
     "lint": "eslint . --no-fix --ignore-path .gitignore --max-warnings 0",
     "type-check": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "playground:dev": "vite --config ./playground/vite.config.ts",
     "release": "standard-version",
     "semantic-release": "semantic-release",
     "prepack": "npm run build"
   },
   "peerDependencies": {
-    "unocss": ">= 0.45.0 < 1",
-    "@iconify-json/prime": "*"
+    "@iconify-json/prime": "*",
+    "unocss": ">= 0.45.0 < 1"
   },
   "peerDependenciesMeta": {
     "@iconify-json/prime": {
@@ -79,12 +80,18 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^18.16.18",
+    "@types/react": "^18.2.17",
+    "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
+    "@vitejs/plugin-react-swc": "^3.3.2",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.8",
+    "primereact": "^9.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "semantic-release": "^21.0.5",
     "standard-version": "^9.5.0",
     "tsup": "^7.0.0",
