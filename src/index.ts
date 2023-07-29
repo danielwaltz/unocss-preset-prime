@@ -98,7 +98,7 @@ export function presetPrime(options?: PresetPrimeOptions): Preset<Theme> {
 
     preset.shortcuts.push([
       /^pi-(.*?)$/,
-      ([, d]) => `i-prime-${d} inline-block align-middle [scale:125%]`,
+      ([, d]) => `i-prime-${d} [scale:150%] inline-block align-middle`,
     ]);
 
     preset.shortcuts.push({
