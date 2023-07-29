@@ -1,6 +1,6 @@
 # UnoCSS Preset Prime
 
-UnoCSS preset for supporting [Prime UI](https://www.primefaces.org/) theme colors.
+UnoCSS preset for supporting [Prime UI](https://www.primefaces.org/) theme colors and icons.
 
 ## Install
 
@@ -15,18 +15,31 @@ yarn add -D unocss-preset-prime
 pnpm i -D unocss-preset-prime
 ```
 
-> :warning: Using PrimeIcons requires installing the `@iconify-json/prime` package.
+> :warning: Using PrimeIcons requires installing the `@iconify-json/prime` package and configuring `presetIcons` in your UnoCSS config file.
 
 ## Initialize
 
 ```ts
-# uno.config.ts
+// uno.config.ts
 
 import { defineConfig, presetUno } from 'unocss';
 import { presetPrime } from 'unocss-preset-prime';
 
 export default defineConfig({
   presets: [presetUno(), presetPrime()],
+});
+
+// or with icon support
+
+import { defineConfig, presetIcons, presetUno } from 'unocss';
+import { presetPrime } from 'unocss-preset-prime';
+
+export default defineConfig({
+  presets: [
+    presetUno(),
+    presetIcons(),
+    presetPrime({ icons: true }),
+  ],
 });
 ```
 
@@ -36,13 +49,15 @@ export default defineConfig({
 presetPrime({
   /**
    * Use a preflight to set theme colors and font-family on body.
+   *
    * @defaultValue `true`
    */
   preflight?: boolean;
   /**
-   * Use `presetIcons` for prime icons (ex `pi-bars`).
+   * Enable shortcuts for using `presetIcons` for PrimeIcons (ex. `pi-bars` and utilities like `pi-spin`).
    *
-   * Requires installing the `@iconify-json/prime` package.
+   * Requires installing the `@iconify-json/prime` package and configuring `presetIcons` in your UnoCSS config file.
+   *
    * @defaultValue `false`
    */
   icons?: boolean;
@@ -51,7 +66,7 @@ presetPrime({
 
 ## Include Prime Components in Content Pipeline
 
-To support PrimeIcons and PrimeFlex classes on internal Prime components, you can include the following in your UnoCSS config depending on your bundler and framework. Below is an example for Vite + PrimeReact. Be sure to include the default regex as well!
+To support parsing class names on internal Prime components, you can include the following in your UnoCSS config depending on your bundler and framework. Below is an example for Vite + PrimeReact. Be sure to include the default regex as well!
 
 ```ts
 content: {
@@ -69,7 +84,7 @@ content: {
 This preset exports helpful types and the generated theme colors directly for extending the theme to support application specific semantic colors.
 
 ```ts
-# uno.config.ts
+// uno.config.ts
 
 import { defineConfig, presetUno } from 'unocss';
 import { presetPrime, primeThemeColors } from 'unocss-preset-prime';

@@ -1,7 +1,7 @@
 {
   "name": "unocss-preset-prime",
   "version": "3.1.0",
-  "description": "UnoCSS preset for supporting Prime UI theme colors",
+  "description": "UnoCSS preset for supporting Prime UI theme colors and icons",
   "license": "MIT",
   "author": "Daniel Waltz",
   "repository": {
@@ -77,6 +77,7 @@
     }
   },
   "devDependencies": {
+    "@iconify-json/prime": "^1.1.5",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "~18.16.20",

@@ -45,13 +45,23 @@ export function Board({ className = '' }: { className?: string }) {
 
         <div className="flex flex-wrap gap-6">
           <div className="flex items-center gap-4">
-            <i className="pi-bars" />
-            <span>pi-bars</span>
+            <i className="pi-plus" />
+            <span>pi-plus</span>
           </div>
 
           <div className="flex items-center gap-4">
             <i className="i-prime-bars" />
             <span>i-prime-bars</span>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <i className="pi-apple pi-fw" />
+            <span>pi-apple pi-fw </span>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <i className="i-prime-bars pi-spin" />
+            <span>i-prime-bars pi-spin </span>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import { Preset, presetIcons } from 'unocss';
+import { Preset } from 'unocss';
 import type { Theme } from '@unocss/preset-mini';
 import { generateThemeColors } from '@/utils/generators';
 import type { PrimeThemeColor, PrimeSurfaceType } from '@/utils/constants';
@@ -6,13 +6,15 @@ import type { PrimeThemeColor, PrimeSurfaceType } from '@/utils/constants';
 export interface PresetPrimeOptions {
   /**
    * Use a preflight to set theme colors and font-family on body.
+   *
    * @defaultValue `true`
    */
   preflight?: boolean;
   /**
-   * Use `presetIcons` for prime icons (ex `pi-bars`).
+   * Enable shortcuts for using `presetIcons` for PrimeIcons (ex. `pi-bars` and utilities like `pi-spin`).
    *
-   * Requires installing the `@iconify-json/prime` package.
+   * Requires installing the `@iconify-json/prime` package and configuring `presetIcons` in your UnoCSS config file.
+   *
    * @defaultValue `false`
    */
   icons?: boolean;
@@ -62,7 +64,6 @@ export function presetPrime(options?: PresetPrimeOptions): Preset<Theme> {
 
   const preset = {
     name: 'unocss-preset-prime',
-    presets: [] as Preset[],
     theme: primeTheme,
     shortcuts: [
       {
@@ -90,22 +91,20 @@ export function presetPrime(options?: PresetPrimeOptions): Preset<Theme> {
           },
         ]
       : undefined,
-  } satisfies Preset;
+  } as Preset<Theme>;
 
   if (icons) {
-    preset.presets.push(
-      presetIcons({
-        extraProperties: {
-          display: 'inline-block',
-          'vertical-align': 'middle',
-        },
-      }),
-    );
+    if (!Array.isArray(preset.shortcuts)) preset.shortcuts = [];
 
     preset.shortcuts.push([
       /^pi-(.*?)$/,
-      ([, d]) => `i-prime-${d} [scale:125%]`,
+      ([, d]) => `i-prime-${d} inline-block align-middle [scale:125%]`,
     ]);
+
+    preset.shortcuts.push({
+      'pi-fw': 'w-1.28571429em',
+      'pi-spin': 'animate-spin animate-duration-2s',
+    });
   }
 
   return preset;

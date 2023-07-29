@@ -1,8 +1,8 @@
-import { defineConfig, presetUno } from 'unocss';
+import { defineConfig, presetIcons, presetUno } from 'unocss';
 import { presetPrime } from '../dist';
 
 export default defineConfig({
-  presets: [presetUno(), presetPrime({ icons: true })],
+  presets: [presetUno(), presetPrime({ icons: true }), presetIcons()],
   safelist: ['bg', 'text'].flatMap((type) =>
     [
       'blue',
