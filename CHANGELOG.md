@@ -1,3 +1,15 @@
+## [3.2.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.1.0...v3.2.0) (2023-07-29)
+
+
+### Features
+
+* enable prime icons utility support ([2d893ad](https://github.com/danielwaltz/unocss-preset-prime/commit/2d893ad609ac47db64d6093871a2530f3cc94d07))
+
+
+### Bug Fixes
+
+* update pi default icon scaling to match primeicons ([40a6be6](https://github.com/danielwaltz/unocss-preset-prime/commit/40a6be6a6d503be416bda35ec1c656e14e3e2cac))
+
 ## [3.1.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.0.1...v3.1.0) (2023-07-28)
 
 
