@@ -1,3 +1,10 @@
+### [3.2.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.0...v3.2.1) (2023-07-31)
+
+
+### Bug Fixes
+
+* reduce default icon scale and add helper shortcut to share scale with other icon libraries ([d24d9d2](https://github.com/danielwaltz/unocss-preset-prime/commit/d24d9d2b49c1918bb8e3771359b43a23bda1ebd9))
+
 ## [3.2.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.1.0...v3.2.0) (2023-07-29)
 
 
