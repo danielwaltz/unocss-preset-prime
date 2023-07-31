@@ -98,10 +98,11 @@ export function presetPrime(options?: PresetPrimeOptions): Preset<Theme> {
 
     preset.shortcuts.push([
       /^pi-(.*?)$/,
-      ([, d]) => `i-prime-${d} [scale:150%] inline-block align-middle`,
+      ([, d]) => `i-prime-${d} i-scale-prime inline-block align-middle`,
     ]);
 
     preset.shortcuts.push({
+      'i-scale-prime': '[scale:130%]',
       'pi-fw': 'w-1.28571429em',
       'pi-spin': 'animate-spin animate-duration-2s',
     });
