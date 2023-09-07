@@ -80,7 +80,7 @@
     "@iconify-json/prime": "^1.1.5",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "~18.16.20",
+    "@types/node": "~18.17.14",
     "@types/react": "^18.2.17",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
