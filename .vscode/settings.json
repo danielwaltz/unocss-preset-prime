@@ -1,3 +1,8 @@
 {
-  "unocss.root": ["./playground"]
+  "unocss.root": [
+    "./playground"
+  ],
+  "conventionalCommits.scopes": [
+    "deps"
+  ]
 }
