@@ -50,18 +50,18 @@ export function Board({ className = '' }: { className?: string }) {
           </div>
 
           <div className="flex items-center gap-4">
-            <i className="i-prime-bars" />
-            <span>i-prime-bars</span>
+            <i className="i-prime-plus" />
+            <span>i-prime-plus</span>
           </div>
 
           <div className="flex items-center gap-4">
-            <i className="pi-apple pi-fw" />
-            <span>pi-apple pi-fw </span>
+            <i className="pi-plus pi-fw" />
+            <span>pi-plus pi-fw </span>
           </div>
 
           <div className="flex items-center gap-4">
-            <i className="i-prime-bars pi-spin" />
-            <span>i-prime-bars pi-spin </span>
+            <i className="pi-spinner pi-spin" />
+            <span>pi-spinner pi-spin </span>
           </div>
         </div>
       </section>
