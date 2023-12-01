@@ -1,3 +1,21 @@
+### [3.2.3](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.2...v3.2.3) (2023-12-01)
+
+
+### Styles
+
+* remove path alias usage ([05dc80f](https://github.com/danielwaltz/unocss-preset-prime/commit/05dc80fe7d7855fb880ae1d06307a62ef3a08ae7))
+
+
+### Continuous Integration
+
+* add publint and package type checking to ci ([f423950](https://github.com/danielwaltz/unocss-preset-prime/commit/f423950239c92b9f38b4846c40862f12a422f82c))
+
+
+### Miscellaneous Chores
+
+* **deps:** update deps ([47bb4b8](https://github.com/danielwaltz/unocss-preset-prime/commit/47bb4b8261febb49213292695090e1eab6bed82c))
+* update node to `v20.10.0` and use dedicated release config ([12431e4](https://github.com/danielwaltz/unocss-preset-prime/commit/12431e4286af04b9bf8404dfdf880788ce85f67b))
+
 ### [3.2.2](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.1...v3.2.2) (2023-10-18)
 
 ### [3.2.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.0...v3.2.1) (2023-07-31)
