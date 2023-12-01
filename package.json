@@ -26,36 +26,6 @@
   "files": [
     "dist"
   ],
-  "release": {
-    "branches": [
-      "main"
-    ],
-    "plugins": [
-      [
-        "@semantic-release/commit-analyzer",
-        {
-          "preset": "conventionalcommits",
-          "releaseRules": [
-            {
-              "type": "chore",
-              "scope": "deps",
-              "release": "patch"
-            }
-          ]
-        }
-      ],
-      [
-        "@semantic-release/release-notes-generator",
-        {
-          "preset": "conventionalcommits"
-        }
-      ],
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git",
-      "@semantic-release/github"
-    ]
-  },
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
@@ -80,7 +50,7 @@
     "@iconify-json/prime": "^1.1.6",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "~18.17.19",
+    "@types/node": "~20.10.2",
     "@types/react": "^18.2.29",
     "@types/react-dom": "^18.2.13",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
