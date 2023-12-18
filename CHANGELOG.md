@@ -1,3 +1,10 @@
+### [3.2.4](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.3...v3.2.4) (2023-12-18)
+
+
+### Miscellaneous Chores
+
+* **deps:** update deps ([6a10535](https://github.com/danielwaltz/unocss-preset-prime/commit/6a105352559ff4c4790619328225155b264d3ce2))
+
 ### [3.2.3](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.2...v3.2.3) (2023-12-01)
 
 
