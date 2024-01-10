@@ -1,4 +1,4 @@
-import { Preset } from 'unocss';
+import type { Preset } from 'unocss';
 import type { Theme } from '@unocss/preset-mini';
 import { generateThemeColors } from './utils/generators';
 import type { PrimeThemeColor, PrimeSurfaceType } from './utils/constants';

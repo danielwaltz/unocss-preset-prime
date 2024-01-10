@@ -1,8 +1,8 @@
 import {
   COLOR_RANGE,
-  ColorRange,
+  type ColorRange,
   THEME_COLORS,
-  PrimeThemeColor as Color,
+  type PrimeThemeColor as Color,
 } from '../utils/constants';
 
 export function generateColorRange<T extends string>(color: T) {
