@@ -1,3 +1,16 @@
+### [3.2.5](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.4...v3.2.5) (2024-01-10)
+
+
+### Code Refactoring
+
+* consistently use type imports ([bc28733](https://github.com/danielwaltz/unocss-preset-prime/commit/bc28733a414da1b6c022f1090261c9007269e333))
+
+
+### Miscellaneous Chores
+
+* **deps:** update deps ([4ef4967](https://github.com/danielwaltz/unocss-preset-prime/commit/4ef4967076d83f7ab668e1de112c4e3068d68bd8))
+* migrate to unbuild ([23daf68](https://github.com/danielwaltz/unocss-preset-prime/commit/23daf681d951ebc0fcd83ad5671b9086c2e91a9c))
+
 ### [3.2.4](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.3...v3.2.4) (2023-12-18)
 
 
