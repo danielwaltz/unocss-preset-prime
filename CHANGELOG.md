@@ -1,3 +1,12 @@
+### [3.2.6](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.5...v3.2.6) (2024-06-01)
+
+
+### Miscellaneous Chores
+
+* **deps:** update deps ([0176ab9](https://github.com/danielwaltz/unocss-preset-prime/commit/0176ab9d3efbca4f9088d7e7c98ef793acea4f06))
+* mark unocss mini preset as external ([e41d17b](https://github.com/danielwaltz/unocss-preset-prime/commit/e41d17bb79e40f7dee682ed5e1a1490a369546fc))
+* update node to `20.12.1` ([55cb083](https://github.com/danielwaltz/unocss-preset-prime/commit/55cb083ca211fb7fddad4a4f8415c5704ff2bd5d))
+
 ### [3.2.5](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.4...v3.2.5) (2024-01-10)
 
 
