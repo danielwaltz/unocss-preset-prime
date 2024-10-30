@@ -73,5 +73,8 @@
     "unbuild": "^2.0.0",
     "unocss": "^0.63.6",
     "vite": "^5.4.10"
+  },
+  "overrides": {
+    "conventional-changelog-conventionalcommits": ">= 8.0.0"
   }
 }
