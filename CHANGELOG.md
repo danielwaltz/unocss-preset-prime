@@ -1,3 +1,19 @@
+## [3.3.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.6...v3.3.0) (2024-10-30)
+
+### Features
+
+* support latest version of unocss ([1b31c17](https://github.com/danielwaltz/unocss-preset-prime/commit/1b31c179443d5e7aebee18836a4633eb17814c4e))
+
+### Miscellaneous Chores
+
+* fix semantic release ([68203d3](https://github.com/danielwaltz/unocss-preset-prime/commit/68203d30a0b48bece566c3ef990a1799e2655acf))
+* update node to `v22.11.0` lts ([bc98a63](https://github.com/danielwaltz/unocss-preset-prime/commit/bc98a6329990049aa3deaac488dcf85f50c9d45d))
+
+### Continuous Integration
+
+* update semantic release ([0b613af](https://github.com/danielwaltz/unocss-preset-prime/commit/0b613afc04ad673f0eafddb2cb32bc3452df78be))
+* use latest github action versions ([4529be0](https://github.com/danielwaltz/unocss-preset-prime/commit/4529be068011d2424d650ebe7f7dfd1a00b2b93b))
+
 ### [3.2.6](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.5...v3.2.6) (2024-06-01)
 
 
