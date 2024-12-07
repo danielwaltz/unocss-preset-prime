@@ -1,4 +1,4 @@
-import { Board } from './Board';
+import { Board } from "./Board";
 
 export function App() {
   return (
@@ -6,8 +6,8 @@ export function App() {
       <h1 className="sr-only">UnoCSS Preset Prime Playground</h1>
 
       <div className="grid grid-cols-2">
-        <Board className="dark min-h-screen bg-ground text-color p-6" />
-        <Board className="light min-h-screen bg-ground text-color p-6" />
+        <Board className="dark bg-ground text-color min-h-screen p-6" />
+        <Board className="bg-ground text-color light min-h-screen p-6" />
       </div>
     </main>
   );

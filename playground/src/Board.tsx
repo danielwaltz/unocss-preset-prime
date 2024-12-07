@@ -1,21 +1,21 @@
-import { PrimeThemeColor } from '../../dist';
+import type { PrimeThemeColor } from "../../dist";
 
-export function Board({ className = '' }: { className?: string }) {
+export function Board({ className = "" }: { className?: string }) {
   const keys = [
-    'blue',
-    'green',
-    'yellow',
-    'cyan',
-    'pink',
-    'indigo',
-    'teal',
-    'orange',
-    'bluegray',
-    'purple',
-    'red',
-    'gray',
-    'primary',
-    'surface',
+    "blue",
+    "green",
+    "yellow",
+    "cyan",
+    "pink",
+    "indigo",
+    "teal",
+    "orange",
+    "bluegray",
+    "purple",
+    "red",
+    "gray",
+    "primary",
+    "surface",
   ] satisfies PrimeThemeColor[];
 
   return (
@@ -25,17 +25,21 @@ export function Board({ className = '' }: { className?: string }) {
 
         <div className="flex flex-wrap gap-4">
           {keys.map((key) => (
-            <div className={`bg-${key} px-4 py-2 rounded-xl`}>bg-{key}</div>
+            <div key={key} className={`bg-${key} px-4 py-2 rounded-xl`}>
+              bg-{key}
+            </div>
           ))}
         </div>
       </section>
 
       <section>
-        <h3 className="mbs-0 mbe-3">Text Colors</h3>
+        <h3 className="mbe-3 mbs-0">Text Colors</h3>
 
         <div className="flex flex-wrap gap-y-2">
           {keys.map((key) => (
-            <div className={`text-${key} px-4 py-2 rounded-xl`}>text-{key}</div>
+            <div key={key} className={`text-${key} px-4 py-2 rounded-xl`}>
+              text-{key}
+            </div>
           ))}
         </div>
       </section>

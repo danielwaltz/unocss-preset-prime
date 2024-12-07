@@ -2,34 +2,34 @@
   "name": "unocss-preset-prime",
   "version": "3.3.0",
   "description": "UnoCSS preset for supporting Prime UI theme colors and icons",
-  "license": "MIT",
-  "author": "Daniel Waltz",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danielwaltz/unocss-preset-prime.git"
-  },
+  "type": "module",
   "keywords": [
     "unocss",
     "unocss-preset",
     "prime"
   ],
-  "type": "module",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielwaltz/unocss-preset-prime.git"
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "author": "Daniel Waltz",
   "files": [
     "dist"
   ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
   "scripts": {
     "build": "unbuild",
     "stub": "unbuild --stub",
-    "lint": "eslint . --no-fix --ignore-path .gitignore --max-warnings 0",
+    "lint": "eslint . --cache --cache-location ./node_modules/.cache/.eslintcache --max-warnings 0",
     "type-check": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1",
     "playground:dev": "vite --config ./playground/vite.config.ts",
@@ -47,6 +47,7 @@
     }
   },
   "devDependencies": {
+    "@danielwaltz/eslint-config": "^0.0.8",
     "@iconify-json/prime": "^1.2.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.0",
@@ -57,13 +58,9 @@
     "@types/node": "~22.10.1",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
-    "@typescript-eslint/eslint-plugin": "^8.17.0",
-    "@typescript-eslint/parser": "^8.17.0",
     "@unocss/preset-mini": "^0.65.1",
     "@vitejs/plugin-react-swc": "^3.7.2",
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
+    "eslint": "^9.16.0",
     "prettier": "^3.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
