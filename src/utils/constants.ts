@@ -5,31 +5,31 @@ export const COLOR_RANGE = [
 export type ColorRange = (typeof COLOR_RANGE)[number];
 
 export const THEME_COLORS = [
-  'blue',
-  'green',
-  'yellow',
-  'cyan',
-  'pink',
-  'indigo',
-  'teal',
-  'orange',
-  'bluegray',
-  'purple',
-  'red',
-  'gray',
-  'primary',
-  'surface',
+  "blue",
+  "green",
+  "yellow",
+  "cyan",
+  "pink",
+  "indigo",
+  "teal",
+  "orange",
+  "bluegray",
+  "purple",
+  "red",
+  "gray",
+  "primary",
+  "surface",
 ] as const;
 
 export type PrimeThemeColor = (typeof THEME_COLORS)[number];
 
 export const SURFACE_TYPES = [
-  'ground',
-  'section',
-  'card',
-  'overlay',
-  'border',
-  'hover',
+  "ground",
+  "section",
+  "card",
+  "overlay",
+  "border",
+  "hover",
 ] as const;
 
 export type PrimeSurfaceType = (typeof SURFACE_TYPES)[number];
