@@ -48,7 +48,7 @@ presetPrime({
   /**
    * Use a preflight to set theme colors and font-family on body.
    *
-   * @defaultValue `true`
+   * @default true
    */
   preflight: boolean,
   /**
@@ -56,7 +56,7 @@ presetPrime({
    *
    * Requires installing the `@iconify-json/prime` package and configuring `presetIcons` in your UnoCSS config file.
    *
-   * @defaultValue `false`
+   * @default false
    */
   icons: boolean,
 });

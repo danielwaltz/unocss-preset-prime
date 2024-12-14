@@ -7,7 +7,7 @@ export interface PresetPrimeOptions {
   /**
    * Use a preflight to set theme colors and font-family on body.
    *
-   * @defaultValue `true`
+   * @default true
    */
   preflight?: boolean;
   /**
@@ -15,7 +15,7 @@ export interface PresetPrimeOptions {
    *
    * Requires installing the `@iconify-json/prime` package and configuring `presetIcons` in your UnoCSS config file.
    *
-   * @defaultValue `false`
+   * @default false
    */
   icons?: boolean;
 }
