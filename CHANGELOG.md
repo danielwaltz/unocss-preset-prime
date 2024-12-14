@@ -1,3 +1,18 @@
+## [3.3.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.3.0...v3.3.1) (2024-12-14)
+
+### Bug Fixes
+
+* update jsdoc for default value ([379ab1b](https://github.com/danielwaltz/unocss-preset-prime/commit/379ab1b19f1867e83ccd41d20ab6f9cb0641a276))
+
+### Miscellaneous Chores
+
+* add full git url to package file ([e0bf60e](https://github.com/danielwaltz/unocss-preset-prime/commit/e0bf60e392f9f9f1926f98bdc034c2bfba5ef865))
+* format ([9353fc5](https://github.com/danielwaltz/unocss-preset-prime/commit/9353fc511fffd2ca0fc532d9add4090afc3cbded))
+* update deps ([72e3e0f](https://github.com/danielwaltz/unocss-preset-prime/commit/72e3e0f27328b252af0d10134906d51eb85aa3b2))
+* update dev deps ([034db5c](https://github.com/danielwaltz/unocss-preset-prime/commit/034db5c6c97602905110b5ca10828580b9231f82))
+* use `.node-version` file ([219c486](https://github.com/danielwaltz/unocss-preset-prime/commit/219c4867e9f08695880a7cec2045c4b75cc7035c))
+* use eslint flat config and fix issues ([5936c69](https://github.com/danielwaltz/unocss-preset-prime/commit/5936c6914755ef1a75279e970fbfaf929d0a1736))
+
 ## [3.3.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.2.6...v3.3.0) (2024-10-30)
 
 ### Features
