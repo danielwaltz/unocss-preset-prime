@@ -1,3 +1,14 @@
+## [3.3.2](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.3.1...v3.3.2) (2025-01-13)
+
+### Bug Fixes
+
+* support unocss epoch versioning ([6eeb5a3](https://github.com/danielwaltz/unocss-preset-prime/commit/6eeb5a3f8e748b3d98862b2d7039f956796dade2))
+
+### Miscellaneous Chores
+
+* update dev deps ([b1f927e](https://github.com/danielwaltz/unocss-preset-prime/commit/b1f927e053bba01e521de50c5c787bddd58fac81))
+* use typescript for eslint config file ([d36c422](https://github.com/danielwaltz/unocss-preset-prime/commit/d36c422c2170712fe66401f4391dae33ac874ced))
+
 ## [3.3.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.3.0...v3.3.1) (2024-12-14)
 
 ### Bug Fixes
