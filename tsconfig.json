@@ -2,12 +2,12 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src", "*.config.ts"],
+  "include": ["src", "*.config.*"],
   "exclude": ["playground"]
 }

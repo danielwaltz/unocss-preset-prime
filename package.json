@@ -29,7 +29,7 @@
   "scripts": {
     "build": "unbuild",
     "stub": "unbuild --stub",
-    "lint": "eslint . --cache --cache-location ./node_modules/.cache/.eslintcache --max-warnings 0",
+    "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --max-warnings 0",
     "type-check": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1",
     "playground:dev": "vite --config ./playground/vite.config.ts",
