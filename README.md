@@ -1,10 +1,10 @@
-# UnoCSS Preset Prime
+# UnoCSS Preset Prime [![npm](https://img.shields.io/npm/v/unocss-preset-prime.svg)](https://npmjs.com/package/unocss-preset-prime)
 
 UnoCSS preset for supporting [Prime UI](https://www.primefaces.org/) theme colors and icons.
 
 ## Install
 
-```bash
+```shell
 # npm
 npm i -D unocss-preset-prime
 
@@ -21,17 +21,14 @@ pnpm i -D unocss-preset-prime
 
 ```ts
 // uno.config.ts
-
 import { defineConfig, presetIcons , presetUno} from 'unocss';
 import { presetPrime } from 'unocss-preset-prime';
-
-// or with icon support
-
 
 export default defineConfig({
   presets: [presetUno(), presetPrime()],
 });
 
+// or with icon support
 export default defineConfig({
   presets: [
     presetUno(),
@@ -87,7 +84,6 @@ This preset exports helpful types and the generated theme colors directly for ex
 
 ```ts
 // uno.config.ts
-
 import { defineConfig, presetUno } from 'unocss';
 import { presetPrime, primeThemeColors } from 'unocss-preset-prime';
 
