@@ -17,13 +17,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
     }
   },
   "scripts": {
@@ -31,7 +31,8 @@
     "stub": "unbuild --stub",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --max-warnings 0",
     "type-check": "tsc --noEmit",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "publint": "npx -y publint@latest && npx -y @arethetypeswrong/cli@latest --pack --profile esm-only",
+    "test": "npm run lint && npm run type-check && npm run build && npm run publint",
     "playground:dev": "vite --config ./playground/vite.config.ts",
     "release": "standard-version",
     "semantic-release": "semantic-release",
