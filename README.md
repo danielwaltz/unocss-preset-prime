@@ -21,7 +21,7 @@ pnpm i -D unocss-preset-prime
 
 ```ts
 // uno.config.ts
-import { defineConfig, presetIcons , presetUno} from 'unocss';
+import { defineConfig, presetIcons, presetUno } from 'unocss';
 import { presetPrime } from 'unocss-preset-prime';
 
 export default defineConfig({

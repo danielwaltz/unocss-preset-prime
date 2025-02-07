@@ -47,7 +47,7 @@
     }
   },
   "devDependencies": {
-    "@danielwaltz/eslint-config": "^0.0.14",
+    "@danielwaltz/eslint-config": "^0.1.0",
     "@iconify-json/prime": "^1.2.2",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
@@ -58,9 +58,10 @@
     "@types/node": "~22.10.10",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
+    "@unocss/eslint-plugin": "^65.4.3",
     "@unocss/preset-mini": "^65.4.3",
     "@vitejs/plugin-react-swc": "^3.7.2",
-    "eslint": "^9.19.0",
+    "eslint": "^9.20.0",
     "prettier": "^3.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -69,7 +70,7 @@
     "typescript": "^5.7.3",
     "unbuild": "^3.3.1",
     "unocss": "^65.4.3",
-    "vite": "^6.0.11"
+    "vite": "^6.1.0"
   },
   "overrides": {
     "conventional-changelog-conventionalcommits": ">= 8.0.0"
