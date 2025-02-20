@@ -21,17 +21,17 @@ pnpm i -D unocss-preset-prime
 
 ```ts
 // uno.config.ts
-import { defineConfig, presetIcons, presetUno } from 'unocss';
+import { defineConfig, presetIcons, presetWind3 } from 'unocss';
 import { presetPrime } from 'unocss-preset-prime';
 
 export default defineConfig({
-  presets: [presetUno(), presetPrime()],
+  presets: [presetWind3(), presetPrime()],
 });
 
 // or with icon support
 export default defineConfig({
   presets: [
-    presetUno(),
+    presetWind3(),
     presetIcons(),
     presetPrime({ icons: true }),
   ],
@@ -84,11 +84,11 @@ This preset exports helpful types and the generated theme colors directly for ex
 
 ```ts
 // uno.config.ts
-import { defineConfig, presetUno } from 'unocss';
+import { defineConfig, presetWind3 } from 'unocss';
 import { presetPrime, primeThemeColors } from 'unocss-preset-prime';
 
 export default defineConfig({
-  presets: [presetUno(), presetPrime()],
+  presets: [presetWind3(), presetPrime()],
   theme: {
     colors: {
       success: primeThemeColors.green[500],
