@@ -1,3 +1,26 @@
+## [4.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.3.2...v4.0.0) (2025-02-20)
+
+### ⚠ BREAKING CHANGES
+
+* support `v66.0.0` of unocss
+* publish module as esm only
+
+### Features
+
+* publish module as esm only ([4f1d0ad](https://github.com/danielwaltz/unocss-preset-prime/commit/4f1d0ad4592fc5c2639a48c3df001f3d2374af56))
+* support `v66.0.0` of unocss ([ab89a64](https://github.com/danielwaltz/unocss-preset-prime/commit/ab89a6499aaeadb2ccbac8db5b9d54dd5369c61f))
+
+### Documentation
+
+* update readme ([f54ea5f](https://github.com/danielwaltz/unocss-preset-prime/commit/f54ea5ffe2743a813224c7b59907e805f62b82a4))
+
+### Miscellaneous Chores
+
+* update deps ([37f7b88](https://github.com/danielwaltz/unocss-preset-prime/commit/37f7b8842414315fb1b0e358957dce969300545b))
+* update deps ([036a07f](https://github.com/danielwaltz/unocss-preset-prime/commit/036a07f6ead9ad27e85a86ab89a951814e9cd8f9))
+* update deps ([fc0b42f](https://github.com/danielwaltz/unocss-preset-prime/commit/fc0b42f36b54d9de7b1f46a8e086e1ab6e3eab75))
+* update eslint config ([4f19c40](https://github.com/danielwaltz/unocss-preset-prime/commit/4f19c40c21b1918fed24261f1a45929ca0034049))
+
 ## [3.3.2](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.3.1...v3.3.2) (2025-01-13)
 
 ### Bug Fixes
