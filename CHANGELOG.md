@@ -1,3 +1,18 @@
+## [4.1.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v4.0.0...v4.1.0) (2025-04-10)
+
+### Features
+
+* add dedicated export for prime theme colors ([a647813](https://github.com/danielwaltz/unocss-preset-prime/commit/a647813608838f5a01793dec156a6036a9ee420d))
+
+### Documentation
+
+* add snippet about theme color export ([03cf934](https://github.com/danielwaltz/unocss-preset-prime/commit/03cf9345d12f656d598c142ab9d1e171d6a20e96))
+
+### Miscellaneous Chores
+
+* update deps ([5b00370](https://github.com/danielwaltz/unocss-preset-prime/commit/5b003703392400d17ae1f4ddf04ea7a35dec45eb))
+* use preset wind 3 for playground ([14b710d](https://github.com/danielwaltz/unocss-preset-prime/commit/14b710d46cc4794a51b3cfb2dff0e8fe217628a2))
+
 ## [4.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v3.3.2...v4.0.0) (2025-02-20)
 
 ### ⚠ BREAKING CHANGES
