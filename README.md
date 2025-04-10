@@ -82,6 +82,8 @@ defineConfig({
 
 This preset exports helpful types and the generated theme colors directly for extending the theme to support application specific semantic colors.
 
+> :warning: For usage at runtime, use the dedicated export to prevent loading core UnoCSS logic: `import { primeThemeColors } from 'unocss-preset-prime/theme'`.
+
 ```ts
 // uno.config.ts
 import { defineConfig, presetWind3 } from 'unocss';
