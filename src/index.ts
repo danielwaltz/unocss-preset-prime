@@ -1,5 +1,4 @@
-import { generateThemeColors } from "./utils/generators";
-import type { PrimeSurfaceType, PrimeThemeColor } from "./utils/constants";
+import { primeTheme } from "./theme";
 import type { Theme } from "@unocss/preset-mini";
 import type { Preset } from "unocss";
 
@@ -19,45 +18,6 @@ export interface PresetPrimeOptions {
    */
   icons?: boolean;
 }
-
-const colors = generateThemeColors();
-
-export const primeThemeColors = {
-  ...colors,
-  primary: {
-    ...colors.primary,
-    DEFAULT: "var(--primary-color)",
-    text: "var(--primary-color-text)",
-  },
-  text: {
-    color: "var(--text-color)",
-    secondary: "var(--text-color-secondary)",
-  },
-  surface: {
-    0: "var(--surface-0)",
-    ...colors.surface,
-    a: "var(--surface-a)",
-    b: "var(--surface-b)",
-    c: "var(--surface-c)",
-    d: "var(--surface-d)",
-    e: "var(--surface-e)",
-    f: "var(--surface-f)",
-    ground: "var(--surface-ground)",
-    section: "var(--surface-section)",
-    card: "var(--surface-card)",
-    overlay: "var(--surface-overlay)",
-    border: "var(--surface-border)",
-    hover: "var(--surface-hover)",
-  },
-} as const;
-
-export type PrimeThemeColors = typeof primeThemeColors;
-
-export const primeTheme = {
-  colors: primeThemeColors,
-} as const satisfies Theme;
-
-export type PrimeTheme = typeof primeTheme;
 
 export function presetPrime(options?: PresetPrimeOptions): Preset<Theme> {
   const { preflight = true, icons = false } = options ?? {};
@@ -112,4 +72,4 @@ export function presetPrime(options?: PresetPrimeOptions): Preset<Theme> {
   return preset;
 }
 
-export type { PrimeSurfaceType, PrimeThemeColor };
+export * from "./theme";
