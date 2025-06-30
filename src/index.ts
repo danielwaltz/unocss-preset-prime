@@ -19,7 +19,7 @@ export interface PresetPrimeOptions {
   icons?: boolean;
 }
 
-export function presetPrime(options?: PresetPrimeOptions): Preset<Theme> {
+export function presetPrime(options?: PresetPrimeOptions): Preset {
   const { preflight = true, icons = false } = options ?? {};
 
   const preset: Preset<Theme> = {
