@@ -21,7 +21,7 @@ export function Board({ className = "" }: { className?: string }) {
   return (
     <div className={`${className} flex flex-col gap-6`}>
       <section>
-        <h3 className="mbs-0">Background Colors</h3>
+        <h3 className="mbe-3">Background Colors</h3>
 
         <div className="flex flex-wrap gap-4">
           {keys.map((key) => (
@@ -33,7 +33,7 @@ export function Board({ className = "" }: { className?: string }) {
       </section>
 
       <section>
-        <h3 className="mbe-3 mbs-0">Text Colors</h3>
+        <h3 className="mbe-3">Text Colors</h3>
 
         <div className="flex flex-wrap gap-y-2">
           {keys.map((key) => (
@@ -45,7 +45,7 @@ export function Board({ className = "" }: { className?: string }) {
       </section>
 
       <section>
-        <h3 className="mbs-0">Icons</h3>
+        <h3 className="mbe-3">Icons</h3>
 
         <div className="flex flex-wrap gap-6">
           <div className="flex items-center gap-4">
