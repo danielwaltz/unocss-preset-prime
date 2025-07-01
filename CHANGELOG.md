@@ -1,3 +1,19 @@
+## [4.1.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v4.1.0...v4.1.1) (2025-07-01)
+
+### Bug Fixes
+
+* make preset return type more relaxed ([a659dcf](https://github.com/danielwaltz/unocss-preset-prime/commit/a659dcf6aeccf4c52973ad782b0b3af7cb224324))
+
+### Miscellaneous Chores
+
+* improve test script ([cb108de](https://github.com/danielwaltz/unocss-preset-prime/commit/cb108deca60ce2cfedd8d012efc67ef19804e506))
+* refresh editorconfig ([0e13973](https://github.com/danielwaltz/unocss-preset-prime/commit/0e13973c90231f52e8266427290a8fe60cba8fcf))
+* update deps ([919c8bc](https://github.com/danielwaltz/unocss-preset-prime/commit/919c8bc4f3078e353bc6401cbad5cbf9788ab6d1))
+* update deps ([959489d](https://github.com/danielwaltz/unocss-preset-prime/commit/959489dfe962b488b049bf78156b86a54524df51))
+* update deps ([f9ba40d](https://github.com/danielwaltz/unocss-preset-prime/commit/f9ba40dd28de2689a8f763fa234064dd7ed1f5b1))
+* update node to `v22.17.0` ([9cec226](https://github.com/danielwaltz/unocss-preset-prime/commit/9cec226ba3759fd6645ebba61b60fca148080cd4))
+* use wind4 preset in playground ([cf58a6a](https://github.com/danielwaltz/unocss-preset-prime/commit/cf58a6a83fbca9a74c84c7ef7c40fad28094bfc9))
+
 ## [4.1.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v4.0.0...v4.1.0) (2025-04-10)
 
 ### Features
