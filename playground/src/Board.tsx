@@ -25,7 +25,7 @@ export function Board({ className = "" }: { className?: string }) {
 
         <div className="flex flex-wrap gap-4">
           {keys.map((key) => (
-            <div key={key} className={`bg-${key} px-4 py-2 rounded-xl`}>
+            <div key={key} className={`bg-${key} rounded-xl px-4 py-2`}>
               bg-{key}
             </div>
           ))}
@@ -37,7 +37,7 @@ export function Board({ className = "" }: { className?: string }) {
 
         <div className="flex flex-wrap gap-y-2">
           {keys.map((key) => (
-            <div key={key} className={`text-${key} px-4 py-2 rounded-xl`}>
+            <div key={key} className={`text-${key} rounded-xl px-4 py-2`}>
               text-{key}
             </div>
           ))}
