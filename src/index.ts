@@ -25,12 +25,6 @@ export function presetPrime(options?: PresetPrimeOptions): Preset {
   const preset: Preset<Theme> = {
     name: "unocss-preset-prime",
     theme: primeTheme,
-    shortcuts: [
-      {
-        "bg-primary": "bg-primary text-primary-text",
-        "bg-primary-reverse": "bg-primary-text text-primary",
-      },
-    ],
     preflights: preflight
       ? [
           {
