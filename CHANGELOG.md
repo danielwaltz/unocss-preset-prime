@@ -1,3 +1,13 @@
+## [6.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v5.0.0...v6.0.0) (2025-08-19)
+
+### ⚠ BREAKING CHANGES
+
+* drop bg shortcuts
+
+### Code Refactoring
+
+* drop bg shortcuts ([961ed7e](https://github.com/danielwaltz/unocss-preset-prime/commit/961ed7eb1275a6459860c238e2c28a230f23c70e))
+
 ## [5.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v4.1.1...v5.0.0) (2025-08-19)
 
 ### ⚠ BREAKING CHANGES
