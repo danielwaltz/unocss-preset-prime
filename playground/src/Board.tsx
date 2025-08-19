@@ -1,4 +1,4 @@
-import type { PrimeThemeColor } from "../../dist";
+import type { PrimeThemeColor } from "../../dist/index.mjs";
 
 export function Board({ className = "" }: { className?: string }) {
   const keys = [
