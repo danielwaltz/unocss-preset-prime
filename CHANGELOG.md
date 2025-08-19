@@ -1,3 +1,26 @@
+## [5.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v4.1.1...v5.0.0) (2025-08-19)
+
+### ⚠ BREAKING CHANGES
+
+* drop surface shortcuts and merge text utils with surface theme
+
+### Miscellaneous Chores
+
+* migrate to `obuild` ([53f49cf](https://github.com/danielwaltz/unocss-preset-prime/commit/53f49cfece1ddb49fa5dd7246df5219c1993c54c))
+* update deps ([d3a32ed](https://github.com/danielwaltz/unocss-preset-prime/commit/d3a32ed48f6dec8070565215544ae552c6d19ffd))
+* update dev deps ([fedfbf3](https://github.com/danielwaltz/unocss-preset-prime/commit/fedfbf3bd30417dd171d614976a06fb7fdeaa1ed))
+* use vite plugin react for playground ([31f24d8](https://github.com/danielwaltz/unocss-preset-prime/commit/31f24d8cc9a56eecf640683290ff5eed00aa1235))
+
+### Code Refactoring
+
+* drop surface shortcuts and merge text utils with surface theme ([d6ea23a](https://github.com/danielwaltz/unocss-preset-prime/commit/d6ea23a1cd9ced0e2b2afdc70a6cc7330166701e))
+
+### Continuous Integration
+
+* add back npm token until semantic release supports trusted publishing ([95892ee](https://github.com/danielwaltz/unocss-preset-prime/commit/95892ee9c418646cc6f74a5143a79818a713af90))
+* publish using trusted publishing ([2e76c15](https://github.com/danielwaltz/unocss-preset-prime/commit/2e76c15e29a307dfffcab5da663152b2f304bd4b))
+* update test cmd ([c725c3b](https://github.com/danielwaltz/unocss-preset-prime/commit/c725c3b608679b0597fabedcd3cd4d807f287aae))
+
 ## [4.1.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v4.1.0...v4.1.1) (2025-07-01)
 
 ### Bug Fixes
