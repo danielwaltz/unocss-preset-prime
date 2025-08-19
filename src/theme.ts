@@ -12,10 +12,6 @@ export const primeThemeColors = {
     DEFAULT: "var(--primary-color)",
     text: "var(--primary-color-text)",
   },
-  text: {
-    color: "var(--text-color)",
-    secondary: "var(--text-color-secondary)",
-  },
   surface: {
     0: "var(--surface-0)",
     ...primeColors.surface,
@@ -31,6 +27,8 @@ export const primeThemeColors = {
     overlay: "var(--surface-overlay)",
     border: "var(--surface-border)",
     hover: "var(--surface-hover)",
+    text: "var(--text-color)",
+    "text-secondary": "var(--text-color-secondary)",
   },
 } as const;
 

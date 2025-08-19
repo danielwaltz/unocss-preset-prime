@@ -29,13 +29,7 @@ export function presetPrime(options?: PresetPrimeOptions): Preset {
       {
         "bg-primary": "bg-primary text-primary-text",
         "bg-primary-reverse": "bg-primary-text text-primary",
-        "text-color": "text-text-color",
-        "text-color-secondary": "text-text-secondary",
       },
-      [
-        /^([a-z]*)-(ground$|section$|card$|overlay$|border$|hover$)/,
-        ([, p, v]) => `${p}-surface-${v}`,
-      ],
     ],
     preflights: preflight
       ? [
