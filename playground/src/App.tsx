@@ -5,7 +5,7 @@ export function App() {
     <main className="font-700">
       <h1 className="sr-only">UnoCSS Preset Prime Playground</h1>
 
-      <Board className="bg-surface-ground text-surface-text min-h-screen p-6" />
+      <Board className="text-surface-text p-6 bg-surface-ground min-h-screen" />
     </main>
   );
 }

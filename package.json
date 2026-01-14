@@ -1,25 +1,19 @@
 {
   "name": "unocss-preset-prime",
+  "type": "module",
   "version": "6.0.0",
   "description": "UnoCSS preset for supporting Prime UI theme colors and icons",
-  "type": "module",
-  "keywords": [
-    "unocss",
-    "unocss-preset",
-    "prime"
-  ],
+  "author": "Daniel Waltz",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danielwaltz/unocss-preset-prime.git"
   },
-  "author": "Daniel Waltz",
-  "files": [
-    "dist"
+  "keywords": [
+    "unocss",
+    "unocss-preset",
+    "prime"
   ],
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
   "exports": {
     ".": {
       "types": "./dist/index.d.mts",
@@ -30,6 +24,12 @@
       "default": "./dist/theme.mjs"
     }
   },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public",
     "provenance": true,

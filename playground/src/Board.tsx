@@ -25,7 +25,7 @@ export function Board({ className = "" }: { className?: string }) {
 
         <div className="flex flex-wrap gap-4">
           {keys.map((key) => (
-            <div key={key} className={`bg-${key} rounded-xl px-4 py-2`}>
+            <div key={key} className={`bg-${key} px-4 py-2 rounded-xl`}>
               bg-{key}
             </div>
           ))}
@@ -37,7 +37,7 @@ export function Board({ className = "" }: { className?: string }) {
 
         <div className="flex flex-wrap gap-y-2">
           {keys.map((key) => (
-            <div key={key} className={`text-${key} rounded-xl px-4 py-2`}>
+            <div key={key} className={`text-${key} px-4 py-2 rounded-xl`}>
               text-{key}
             </div>
           ))}
@@ -48,22 +48,22 @@ export function Board({ className = "" }: { className?: string }) {
         <h3 className="mbe-3">Icons</h3>
 
         <div className="flex flex-wrap gap-6">
-          <div className="flex items-center gap-4">
+          <div className="flex gap-4 items-center">
             <i className="pi-plus" />
             <span>pi-plus</span>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex gap-4 items-center">
             <i className="i-prime-plus" />
             <span>i-prime-plus</span>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex gap-4 items-center">
             <i className="pi-plus pi-fw" />
             <span>pi-plus pi-fw </span>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex gap-4 items-center">
             <i className="pi-spinner pi-spin" />
             <span>pi-spinner pi-spin </span>
           </div>
