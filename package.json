@@ -41,7 +41,7 @@
     "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --max-warnings 0",
     "type-check": "tsc --noEmit",
     "publint": "npx -y publint@latest && npx -y @arethetypeswrong/cli@latest --pack --profile esm-only",
-    "test": "run-s lint type-check build publint",
+    "test": "run-s build lint type-check publint",
     "playground:dev": "vite --config ./playground/vite.config.ts",
     "release": "standard-version",
     "semantic-release": "semantic-release",
