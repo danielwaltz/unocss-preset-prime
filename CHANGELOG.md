@@ -1,3 +1,22 @@
+## [7.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v6.0.0...v7.0.0) (2026-02-02)
+
+### ⚠ BREAKING CHANGES
+
+* add primeuix mode and set as default
+
+### Features
+
+* add primeuix mode and set as default ([042fe53](https://github.com/danielwaltz/unocss-preset-prime/commit/042fe5370e7a96a9b95e86ed65aa617811f292f3))
+
+### Miscellaneous Chores
+
+* build before linting ([c7f26ff](https://github.com/danielwaltz/unocss-preset-prime/commit/c7f26ff976588c35ea70b2e5f8ba202809924010))
+* linter fixes ([28fdcfd](https://github.com/danielwaltz/unocss-preset-prime/commit/28fdcfd8b15b842230467b8fe9b016e8a77b465c))
+* update dev deps ([925a1e7](https://github.com/danielwaltz/unocss-preset-prime/commit/925a1e7096fed0a818ff5aaaf549cad09119d13a))
+* update dev deps ([2b291b9](https://github.com/danielwaltz/unocss-preset-prime/commit/2b291b9de78de1a978a8ee912aa29f82497b6ea9))
+* update dev deps ([3f2a85d](https://github.com/danielwaltz/unocss-preset-prime/commit/3f2a85dd36ebe3ee2572186b7a5525f41e621c51))
+* update node to `v24.13.0` ([4a6ab73](https://github.com/danielwaltz/unocss-preset-prime/commit/4a6ab734937d53e845d68001d11a226c71b08a0b))
+
 ## [6.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v5.0.0...v6.0.0) (2025-08-19)
 
 ### ⚠ BREAKING CHANGES
