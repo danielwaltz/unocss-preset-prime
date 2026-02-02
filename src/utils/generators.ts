@@ -1,31 +1,71 @@
-import {
-  COLOR_RANGE,
-  THEME_COLORS,
-  type PrimeThemeColor as Color,
-  type ColorRange,
-} from "./constants";
+interface GenerateColorRangeOptions<
+  TColors extends string[] = string[],
+  TRange extends number[] = number[],
+  TRangeDefault = TRange[number],
+  TPrefix extends string = string,
+> {
+  colors: TColors;
+  range: TRange;
+  rangeDefault: TRangeDefault;
+  prefix: TPrefix;
+}
 
-export function generateColorRange<T extends string>(color: T) {
-  return COLOR_RANGE.reduce(
+export function generateColorRange<
+  TColor extends TColors[number],
+  TColors extends string[],
+  TRange extends number[],
+  TRangeDefault extends TRange[number],
+  TPrefix extends string,
+>(
+  color: TColor,
+  options: GenerateColorRangeOptions<TColors, TRange, TRangeDefault, TPrefix>,
+) {
+  const { prefix, range } = options;
+
+  return range.reduce(
     (result, number) => ({
       ...result,
-      [number]: `var(--${color}-${number})`,
+      [number]: `var(--${prefix}${color}-${number})`,
     }),
-    {} as { [K in ColorRange]: `var(--${T}-${K})` },
+    {} as { [K in TRange[number]]: `var(--${TPrefix}${TColor}-${K})` },
   );
 }
 
-export function generateColorRangeWithDefault<T extends string>(color: T) {
-  const result = generateColorRange(color);
-  return { ...result, DEFAULT: result[500] } as const;
+export function generateColorRangeWithDefault<
+  TColor extends TColors[number],
+  TColors extends string[],
+  TRange extends number[],
+  TRangeDefault extends TRange[number],
+  TPrefix extends string,
+>(
+  color: TColor,
+  options: GenerateColorRangeOptions<TColors, TRange, TRangeDefault, TPrefix>,
+) {
+  const result = generateColorRange(color, options);
+  return { ...result, DEFAULT: result[options.rangeDefault] } as const;
 }
 
-export function generateThemeColors() {
-  return THEME_COLORS.reduce(
+export function generateThemeColors<
+  TColors extends string[],
+  TRange extends number[],
+  TRangeDefault extends TRange[number],
+  TPrefix extends string,
+>(options: GenerateColorRangeOptions<TColors, TRange, TRangeDefault, TPrefix>) {
+  return options.colors.reduce(
     (result, color) => ({
       ...result,
-      [color]: generateColorRangeWithDefault(color),
+      [color]: generateColorRangeWithDefault(color, options),
     }),
-    {} as { [K in Color]: ReturnType<typeof generateColorRangeWithDefault<K>> },
+    {} as {
+      [Color in TColors[number]]: ReturnType<
+        typeof generateColorRangeWithDefault<
+          Color,
+          TColors,
+          TRange,
+          TRangeDefault,
+          TPrefix
+        >
+      >;
+    },
   );
 }

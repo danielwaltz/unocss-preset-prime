@@ -1,8 +1,15 @@
-import { primeTheme } from "./theme";
+import { primeUixTheme } from "./themes/primeuix";
+import { primeSassTheme } from "./themes/sass";
 import type { Theme } from "@unocss/preset-mini";
 import type { Preset } from "unocss";
 
 export interface PresetPrimeOptions {
+  /**
+   * Theme mode to use. Changes CSS variable names to match the specified UI library.
+   *
+   * @default "primeuix"
+   */
+  mode?: "primeuix" | "sass";
   /**
    * Use a preflight to set theme colors and font-family on body.
    *
@@ -20,25 +27,10 @@ export interface PresetPrimeOptions {
 }
 
 export function presetPrime(options?: PresetPrimeOptions): Preset {
-  const { preflight = true, icons = false } = options ?? {};
+  const { mode = "primeuix", preflight = true, icons = false } = options ?? {};
 
   const preset: Preset<Theme> = {
     name: "unocss-preset-prime",
-    theme: primeTheme,
-    preflights: preflight
-      ? [
-          {
-            getCSS: () => `
-              body {
-                margin: 0;
-                background-color: var(--surface-ground);
-                color: var(--text-color);
-                font-family: var(--font-family);
-              }
-            `,
-          },
-        ]
-      : undefined,
   };
 
   if (icons) {
@@ -57,7 +49,46 @@ export function presetPrime(options?: PresetPrimeOptions): Preset {
     );
   }
 
-  return preset;
-}
+  if (mode === "sass") {
+    return {
+      ...preset,
+      theme: primeSassTheme,
+      preflights: preflight
+        ? [
+            {
+              getCSS: () => `
+                body {
+                  margin: 0;
+                  background-color: var(--surface-ground);
+                  color: var(--text-color);
+                  font-family: var(--font-family);
+                }
+            `,
+            },
+          ]
+        : undefined,
+    };
+  }
 
-export * from "./theme";
+  if (mode === "primeuix") {
+    return {
+      ...preset,
+      theme: primeUixTheme,
+      preflights: preflight
+        ? [
+            {
+              getCSS: () => `
+                body {
+                  margin: 0;
+                  background-color: var(--p-content-background);
+                  color: var(--p-content-color);
+                }
+            `,
+            },
+          ]
+        : undefined,
+    };
+  }
+
+  throw new Error(`Unsupported mode: ${mode}`);
+}

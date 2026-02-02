@@ -21,20 +21,16 @@ pnpm i -D unocss-preset-prime
 
 ```ts
 // uno.config.ts
-import { defineConfig, presetIcons, presetWind3 } from 'unocss';
-import { presetPrime } from 'unocss-preset-prime';
+import { defineConfig, presetIcons, presetWind4 } from "unocss";
+import { presetPrime } from "unocss-preset-prime";
 
 export default defineConfig({
-  presets: [presetWind3(), presetPrime()],
+  presets: [presetWind4(), presetPrime()],
 });
 
 // or with icon support
 export default defineConfig({
-  presets: [
-    presetWind3(),
-    presetIcons(),
-    presetPrime({ icons: true }),
-  ],
+  presets: [presetWind4(), presetIcons(), presetPrime({ icons: true })],
 });
 ```
 
@@ -42,6 +38,12 @@ export default defineConfig({
 
 ```ts
 presetPrime({
+  /**
+   * Theme mode to use. Changes CSS variable names to match the specified UI library.
+   *
+   * @default "primeuix"
+   */
+  mode: "primeuix" | "sass",
   /**
    * Use a preflight to set theme colors and font-family on body.
    *
@@ -64,7 +66,7 @@ presetPrime({
 To support parsing class names on internal Prime components, you can include the following in your UnoCSS config depending on your bundler and framework. Below is an example for Vite + PrimeReact. Be sure to include the default regex as well!
 
 ```ts
-import { defineConfig } from 'unocss';
+import { defineConfig } from "unocss";
 
 defineConfig({
   content: {
@@ -75,7 +77,7 @@ defineConfig({
       ],
     },
   },
-})
+});
 ```
 
 ## Extending
@@ -86,11 +88,11 @@ This preset exports helpful types and the generated theme colors directly for ex
 
 ```ts
 // uno.config.ts
-import { defineConfig, presetWind3 } from 'unocss';
-import { presetPrime, primeThemeColors } from 'unocss-preset-prime';
+import { defineConfig, presetWind4 } from "unocss";
+import { presetPrime, primeThemeColors } from "unocss-preset-prime";
 
 export default defineConfig({
-  presets: [presetWind3(), presetPrime()],
+  presets: [presetWind4(), presetPrime()],
   theme: {
     colors: {
       success: primeThemeColors.green[500],

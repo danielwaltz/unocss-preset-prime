@@ -1,25 +1,38 @@
-import type { PrimeThemeColor } from "../../dist/index.mjs";
+import { Button } from "primereact/button";
+import type { PrimeUIXThemeColors } from "../../dist/theme.mjs";
 
 export function Board({ className = "" }: { className?: string }) {
   const keys = [
-    "blue",
-    "green",
-    "yellow",
-    "cyan",
-    "pink",
-    "indigo",
-    "teal",
-    "orange",
-    "bluegray",
-    "purple",
-    "red",
+    "stone",
+    "neutral",
+    "zinc",
     "gray",
+    "slate",
+    "rose",
+    "pink",
+    "fuchsia",
+    "purple",
+    "violet",
+    "indigo",
+    "blue",
+    "sky",
+    "cyan",
+    "teal",
+    "yellow",
+    "amber",
+    "orange",
+    "red",
+    "lime",
+    "green",
+    "emerald",
     "primary",
     "surface",
-  ] satisfies PrimeThemeColor[];
+  ] satisfies (keyof PrimeUIXThemeColors)[];
 
   return (
     <div className={`${className} flex flex-col gap-6`}>
+      <Button />
+
       <section>
         <h3 className="mbe-3">Background Colors</h3>
 
