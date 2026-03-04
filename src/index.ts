@@ -26,6 +26,8 @@ export interface PresetPrimeOptions {
   icons?: boolean;
 }
 
+const PRIME_ICON_RE = /^pi-(.*)$/;
+
 export function presetPrime(options?: PresetPrimeOptions): Preset {
   const { mode = "primeuix", preflight = true, icons = false } = options ?? {};
 
@@ -38,7 +40,7 @@ export function presetPrime(options?: PresetPrimeOptions): Preset {
 
     preset.shortcuts.push(
       [
-        /^pi-(.*)$/,
+        PRIME_ICON_RE,
         ([, d]) => `i-prime-${d} i-scale-prime inline-block align-middle`,
       ],
       {
