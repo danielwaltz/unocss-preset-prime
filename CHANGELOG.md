@@ -1,3 +1,17 @@
+## [7.0.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v7.0.0...v7.0.1) (2026-03-04)
+
+### Bug Fixes
+
+* update primeuix named surface colors to follow active theme ([db04b82](https://github.com/danielwaltz/unocss-preset-prime/commit/db04b8255f7a504dc83bd7a2d498d337b3d183e6))
+
+### Miscellaneous Chores
+
+* update deps ([f21dff6](https://github.com/danielwaltz/unocss-preset-prime/commit/f21dff615a01715fd2c3ea1c0ab980d2af808b20))
+
+### Code Refactoring
+
+* move prime icon regex to module scope ([6b9a024](https://github.com/danielwaltz/unocss-preset-prime/commit/6b9a024a6c8a3ae774f2966f086b660c0582b30a))
+
 ## [7.0.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v6.0.0...v7.0.0) (2026-02-02)
 
 ### ⚠ BREAKING CHANGES
