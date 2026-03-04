@@ -1,3 +1,9 @@
+## [7.0.2](https://github.com/danielwaltz/unocss-preset-prime/compare/v7.0.1...v7.0.2) (2026-03-04)
+
+### Bug Fixes
+
+* update named primeuix surface colors ([143bba3](https://github.com/danielwaltz/unocss-preset-prime/commit/143bba3be4c81c24d0569eed551c9e3b9d68a476))
+
 ## [7.0.1](https://github.com/danielwaltz/unocss-preset-prime/compare/v7.0.0...v7.0.1) (2026-03-04)
 
 ### Bug Fixes
