@@ -46,10 +46,10 @@ export const primeUixColors = {
   surface: {
     0: "var(--p-surface-0)",
     ...generatedColors.surface,
-    ground: "var(--p-form-field-background)", // closest generic equivalent
-    section: "var(--p-content-border-color)",
-    card: "var(--p-content-background)",
-    overlay: "var(--p-content-background)",
+    ground: "var(--p-content-background)",
+    section: "var(--p-content-background-hover)",
+    card: "var(--p-content-background-hover)",
+    overlay: "var(--p-content-background-hover)",
     border: "var(--p-content-border-color)",
     hover: "var(--p-content-hover-background)",
     content: "var(--p-content-background)",
@@ -57,9 +57,9 @@ export const primeUixColors = {
     "content-border": "var(--p-content-border-color)",
     text: "var(--p-content-color)",
     "text-hover": "var(--p-content-hover-color)",
-    "text-secondary": "var(--p-text-muted-color)",
     "text-muted": "var(--p-text-muted-color)",
     "text-hover-muted": "var(--p-text-hover-muted-color)",
+    "text-secondary": "var(--p-text-muted-color)",
   },
 } as const;
 
