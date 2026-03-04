@@ -1,3 +1,9 @@
+## [7.0.3](https://github.com/danielwaltz/unocss-preset-prime/compare/v7.0.2...v7.0.3) (2026-03-04)
+
+### Bug Fixes
+
+* update primeuix hover background color var name ([5f45519](https://github.com/danielwaltz/unocss-preset-prime/commit/5f455193d1cbb1c0618e24cace75527ead30b02c))
+
 ## [7.0.2](https://github.com/danielwaltz/unocss-preset-prime/compare/v7.0.1...v7.0.2) (2026-03-04)
 
 ### Bug Fixes
