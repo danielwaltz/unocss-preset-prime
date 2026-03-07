@@ -48,8 +48,8 @@
     "prepack": "npm run build"
   },
   "peerDependencies": {
-    "@iconify-json/prime": ">= 1.1.5",
-    "unocss": ">= 66.0.0 < 100"
+    "@iconify-json/prime": ">=1.1.5",
+    "unocss": ">=66.0.0 < 100"
   },
   "peerDependenciesMeta": {
     "@iconify-json/prime": {
@@ -57,7 +57,7 @@
     }
   },
   "devDependencies": {
-    "@danielwaltz/eslint-config": "^3.3.0",
+    "@danielwaltz/eslint-config": "^3.3.2",
     "@iconify-json/prime": "^1.2.4",
     "@primeuix/themes": "^2.0.3",
     "@semantic-release/changelog": "^6.0.3",
@@ -69,10 +69,10 @@
     "@types/node": "~24.10.15",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@unocss/eslint-plugin": "^66.6.5",
-    "@unocss/preset-mini": "^66.6.5",
+    "@unocss/eslint-plugin": "^66.6.6",
+    "@unocss/preset-mini": "^66.6.6",
     "@vitejs/plugin-react": "^5.1.4",
-    "eslint": "^10.0.2",
+    "eslint": "^10.0.3",
     "npm-run-all2": "^8.0.4",
     "obuild": "^0.4.31",
     "prettier": "^3.8.1",
@@ -82,10 +82,10 @@
     "semantic-release": "^25.0.3",
     "standard-version": "^9.5.0",
     "typescript": "^5.9.3",
-    "unocss": "^66.6.5",
+    "unocss": "^66.6.6",
     "vite": "^7.3.1"
   },
   "overrides": {
-    "conventional-changelog-conventionalcommits": ">=9.2.0"
+    "conventional-changelog-conventionalcommits": ">=9.3.0"
   }
 }
