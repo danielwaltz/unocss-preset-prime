@@ -15,18 +15,10 @@
     "prime"
   ],
   "exports": {
-    ".": {
-      "types": "./dist/index.d.mts",
-      "default": "./dist/index.mjs"
-    },
-    "./theme": {
-      "types": "./dist/theme.d.mts",
-      "default": "./dist/theme.mjs"
-    }
+    ".": "./dist/index.mjs",
+    "./theme": "./dist/theme.mjs",
+    "./package.json": "./package.json"
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
   "files": [
     "dist"
   ],
@@ -36,16 +28,18 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "obuild",
-    "stub": "obuild --stub",
-    "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --max-warnings 0",
-    "type-check": "tsc --noEmit",
-    "publint": "npx -y publint@latest && npx -y @arethetypeswrong/cli@latest --pack --profile esm-only",
-    "test": "run-s build lint type-check publint",
+    "build": "tsdown",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "playground:dev": "vite --config ./playground/vite.config.ts",
+    "prepack": "npm run build",
     "release": "standard-version",
     "semantic-release": "semantic-release",
-    "prepack": "npm run build"
+    "test": "npm run prepack && npm run lint && npm run type-check && npm run test:publish",
+    "test:attw": "npx -y @arethetypeswrong/cli@latest --pack --profile esm-only",
+    "test:publint": "npx -y publint@latest",
+    "test:publish": "npm run test:attw && npm run test:publint",
+    "type-check": "tsc --noEmit"
   },
   "peerDependencies": {
     "@iconify-json/prime": ">=1.1.5",
@@ -73,14 +67,14 @@
     "@unocss/preset-mini": "^66.6.6",
     "@vitejs/plugin-react": "^5.1.4",
     "eslint": "^10.0.3",
-    "npm-run-all2": "^8.0.4",
-    "obuild": "^0.4.31",
+    "jiti": "^2.6.1",
     "prettier": "^3.8.1",
     "primereact": "^11.0.0-alpha.10",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "semantic-release": "^25.0.3",
     "standard-version": "^9.5.0",
+    "tsdown": "^0.21.0",
     "typescript": "^5.9.3",
     "unocss": "^66.6.6",
     "vite": "^7.3.1"
