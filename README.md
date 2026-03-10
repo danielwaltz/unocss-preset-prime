@@ -2,6 +2,8 @@
 
 UnoCSS preset for supporting [Prime UI](https://www.primefaces.org/) theme colors and icons.
 
+> :warning: `presetWind4` is the only explicitly supported core preset. Your milage may vary using `presetWind3` or other presets.
+
 ## Install
 
 ```shell

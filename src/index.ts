@@ -1,6 +1,6 @@
 import { primeUixTheme } from "./themes/primeuix";
 import { primeSassTheme } from "./themes/sass";
-import type { Theme } from "@unocss/preset-mini";
+import type { Theme } from "@unocss/preset-wind4";
 import type { Preset } from "unocss";
 
 export interface PresetPrimeOptions {

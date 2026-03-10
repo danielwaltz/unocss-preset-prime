@@ -1,5 +1,5 @@
 import { generateThemeColors } from "../utils/generators";
-import type { Theme } from "@unocss/preset-mini";
+import type { Theme } from "@unocss/preset-wind4";
 
 const generatedColors = generateThemeColors({
   prefix: "p-",
