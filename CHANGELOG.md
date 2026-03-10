@@ -1,3 +1,22 @@
+## [7.1.0](https://github.com/danielwaltz/unocss-preset-prime/compare/v7.0.3...v7.1.0) (2026-03-10)
+
+### Features
+
+* support more than just primeuix theme colors ([d9543dc](https://github.com/danielwaltz/unocss-preset-prime/commit/d9543dc86f83d21cb52e2fa6fddb6df0f84b958e))
+
+### Bug Fixes
+
+* explicitly support wind4 ([941d3bf](https://github.com/danielwaltz/unocss-preset-prime/commit/941d3bf5e81fbedd1c6ab01336a5f41c9314952c))
+
+### Miscellaneous Chores
+
+* migrate from obuild to tsdown ([53baaa8](https://github.com/danielwaltz/unocss-preset-prime/commit/53baaa88c82cb4032bdc930a21aead6d949bcb9c))
+* update dev deps ([0a32770](https://github.com/danielwaltz/unocss-preset-prime/commit/0a32770c3e668d9fc3a57d414847d62b317a38b7))
+
+### Continuous Integration
+
+* bump action versions ([aaa28c8](https://github.com/danielwaltz/unocss-preset-prime/commit/aaa28c8b94763ef579ac9542e706d07ad660cd15))
+
 ## [7.0.3](https://github.com/danielwaltz/unocss-preset-prime/compare/v7.0.2...v7.0.3) (2026-03-04)
 
 ### Bug Fixes
